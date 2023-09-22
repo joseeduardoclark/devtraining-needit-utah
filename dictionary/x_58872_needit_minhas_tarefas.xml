@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="bcaab4eb4711311034c292c7536d43f9" extends="task" label="Minhas tarefas" max_length="40" name="x_58872_needit_minhas_tarefas" type="collection">
+        <element label="Ordem" max_length="40" name="ordem" type="integer"/>
+    </element>
+</database>
