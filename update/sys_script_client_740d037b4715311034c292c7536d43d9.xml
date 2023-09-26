@@ -8,14 +8,14 @@
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name/>
+        <name>Onload pagina item selecionado</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
    if (isLoading || newValue === '') {
       return;
    }
 	alert("Página carregando..... Aguarde!");
-   //Type appropriate comment here, and begin script below
+   //Type appropriate comment here, and begin script belo
    
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -24,15 +24,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>740d037b4715311034c292c7536d43d9</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name/>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Onload pagina item selecionado</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_client_740d037b4715311034c292c7536d43d9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-22 18:23:54</sys_updated_on>
+        <sys_updated_on>2023-09-25 18:18:55</sys_updated_on>
         <table>x_58872_needit_needit</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
