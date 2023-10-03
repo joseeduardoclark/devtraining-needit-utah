@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f141a2574721311034c292c7536d43f1" label="Ocassions" max_length="40" name="x_58872_needit_occasions" type="collection">
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Day type" max_length="40" name="u_day_type" type="string"/>
+        <element label="Employee" max_length="40" name="u_employee" type="string"/>
+        <element display="true" label="Employee e-mail" max_length="200" name="u_employee_mail" type="string"/>
+        <index name="index">
+            <element name="u_employee_mail"/>
+        </index>
+    </element>
+</database>
