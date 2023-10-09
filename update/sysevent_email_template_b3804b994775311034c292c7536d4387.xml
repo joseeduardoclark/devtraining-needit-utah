@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_58872_needit_occasions</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p>Sua data de anivers&aacute;rio est&aacute; incorreta? Clique aqui para corrigir a data</p>]]></message_html>
+        <message_list/>
+        <message_text><![CDATA[Prezado,  ${u_employee}
+A data de aniversário deve iniciar com o seu ano de nascimento.
+
+${mail_script:FindBirthdayOnTheSameDay }
+${mail_script:AddCC}
+${mailto:mailto.incorrectbirthday}]]></message_text>
+        <name>mailto.incorrectbirthday</name>
+        <sms_alternate/>
+        <subject>Re: Incorrect birthday</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 19:26:41</sys_created_on>
+        <sys_id>b3804b994775311034c292c7536d4387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>mailto.incorrectbirthday</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sysevent_email_template_b3804b994775311034c292c7536d4387</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 19:26:41</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

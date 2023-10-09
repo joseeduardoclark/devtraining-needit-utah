@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>aniversarios_empresa</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action,
+    /* Optional GlideRecord */
+    event) {
+
+    // Add your code here
+
+    email.addAddress('cc', current.u_employee.manager.email + '');
+
+    var sameBirthday = new GlideRecord('x_58872_needit_occasions');
+    sameBirthday.addQuery('occasion_month', current.occasion_month);
+    sameBirthday.addQuery('occasion_ady', current.occasion_day);
+    sameBirthday.addQuery('u_ocassion', 'birthday');
+
+    sameBirthday.query();
+
+    template.print(sameBirthday.getRowCount() - 1 + 'empregados na empresa que compartilham seu aniversário');
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-09 14:26:53</sys_created_on>
+        <sys_id>16b9b1194771311034c292c7536d43a3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>aniversarios_empresa</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_email_16b9b1194771311034c292c7536d43a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-09 14:28:55</sys_updated_on>
+    </sys_script_email>
+</record_update>
