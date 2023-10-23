@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="5140aa3e4715311034c292c7536d434c" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="target_field=percente_complete,target_threshold_colors=0:firebrick;25:darkorange;50:gold;75:yellowgreen;90:darkgreen,target_field=target" label="% complete" max_length="15" name="percente_complete" type="percent_complete"/>
+        <element display="true" label="Target" max_length="20" name="target" type="decimal"/>
         <element choice="1" label="Dia do mês" max_length="40" name="u_integer_dia_mes" type="integer">
             <choice/>
         </element>
